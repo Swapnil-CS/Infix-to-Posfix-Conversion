@@ -14,6 +14,7 @@ NODE *createnode(char item)     //function for creating each node of stack
     p=(NODE*)malloc(sizeof(NODE));  //allocating memory for a node
     p->data=item;           
     p->next=NULL;
+    return p;
 }
 
 void push(NODE **top,char symb)    //push function of stack
